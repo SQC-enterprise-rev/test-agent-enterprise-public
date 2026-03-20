@@ -96,13 +96,13 @@ class BuggyCalculator {
   }
 
   // Issue 17: Incorrect average calculation
-  average(numbers) {
+  average(nums) {
     let sum = 0;
-    for (let i = 0; i <= numbers.length; i++) {
+    for (let i = 0; i <= nums.length; i++) {
       // Should be < numbers.length
-      sum += numbers[i];
+      sum += nums[i];
     }
-    return sum / numbers.length;
+    return sum / nums.length;
   }
 
   // Issue 18: Incorrect maximum finding
