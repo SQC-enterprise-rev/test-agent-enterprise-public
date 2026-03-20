@@ -174,10 +174,7 @@ class BuggyCalculator {
 
   // Issue 23: Incorrect input validation
   validateInput(input) {
-    if (typeof input === "number") {
-      return true;
-    }
-    return false; // Should also check for NaN and Infinity
+    return typeof input === "number"; // Should also check for NaN and Infinity
   }
 
   // Issue 24: Incorrect decimal precision
