@@ -117,11 +117,11 @@ class BuggyCalculator {
   }
 
   // Issue 19: Incorrect minimum finding
-  min(numbers) {
-    let min = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-      if (numbers[i] < min) {
-        min = numbers[i];
+  min(nums) {
+    let min = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] < min) {
+        min = nums[i];
       }
     }
     return min; // No check for empty array
