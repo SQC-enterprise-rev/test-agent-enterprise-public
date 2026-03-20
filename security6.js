@@ -15,7 +15,6 @@ localStorage.setItem("token", "sensitive-auth-token");
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
