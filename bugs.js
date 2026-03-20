@@ -86,7 +86,9 @@ class BuggyCalculator {
 
   // Issue 15: Incorrect GCD calculation
   gcd(a, b) {
-    if (b === 0) return a;
+    if (b === 0) {
+      return a;
+    }
     return this.gcd(b, a % b); // Logic is correct but missing validation
   }
 
