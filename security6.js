@@ -15,8 +15,8 @@ localStorage.setItem("token", "sensitive-auth-token");
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
-window.open(url);
+const url3 = "http://example.com";
+window.open(url3);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
@@ -62,8 +62,8 @@ localStorage.setItem("token", "sensitive-auth-token");
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
-window.open(url);
+const url2 = "http://example.com";
+window.open(url2);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
