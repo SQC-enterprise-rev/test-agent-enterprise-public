@@ -130,7 +130,7 @@ class BuggyCalculator {
   // Issue 20: Incorrect sum calculation
   sum(numbers) {
     let total = 0;
-    for (let num of numbers) {
+    for (const num of numbers) {
       total += num; // No type checking for non-numbers
     }
     return total;
