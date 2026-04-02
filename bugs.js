@@ -86,7 +86,9 @@ class BuggyCalculator {
 
   // Issue 15: Incorrect GCD calculation
   gcd(a, b) {
-    if (b === 0) return a;
+    if (b === 0) {
+      return a;
+    }
     return this.gcd(b, a % b); // Logic is correct but missing validation
   }
 
@@ -96,13 +98,12 @@ class BuggyCalculator {
   }
 
   // Issue 17: Incorrect average calculation
-  average(numbers) {
+  average(nums) {
     let sum = 0;
-    for (let i = 0; i <= numbers.length; i++) {
-      // Should be < numbers.length
-      sum += numbers[i];
+    for (let i = 0; i <= nums.length; i++) {
+      sum += nums[i];
     }
-    return sum / numbers.length;
+    return sum / nums.length;
   }
 
   // Issue 18: Incorrect maximum finding
@@ -130,7 +131,7 @@ class BuggyCalculator {
   // Issue 20: Incorrect sum calculation
   sum(numbers) {
     let total = 0;
-    for (let num of numbers) {
+    for (const num of nums) {
       total += num; // No type checking for non-numbers
     }
     return total;
@@ -174,10 +175,7 @@ class BuggyCalculator {
 
   // Issue 23: Incorrect input validation
   validateInput(input) {
-    if (typeof input === "number") {
-      return true;
-    }
-    return false; // Should also check for NaN and Infinity
+    return typeof input === "number";
   }
 
   // Issue 24: Incorrect decimal precision
