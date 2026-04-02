@@ -86,7 +86,9 @@ class BuggyCalculator {
 
   // Issue 15: Incorrect GCD calculation
   gcd(a, b) {
-    if (b === 0) return a;
+    if (b === 0) {
+      return a;
+    }
     return this.gcd(b, a % b); // Logic is correct but missing validation
   }
 
@@ -96,41 +98,40 @@ class BuggyCalculator {
   }
 
   // Issue 17: Incorrect average calculation
-  average(numbers) {
+  average(nums) {
     let sum = 0;
-    for (let i = 0; i <= numbers.length; i++) {
-      // Should be < numbers.length
-      sum += numbers[i];
+    for (let i = 0; i <= nums.length; i++) {
+      sum += nums[i];
     }
-    return sum / numbers.length;
+    return sum / nums.length;
   }
 
   // Issue 18: Incorrect maximum finding
-  max(numbers) {
-    let max = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-      if (numbers[i] > max) {
-        max = numbers[i];
+  max(nums) {
+    let max = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] > max) {
+        max = nums[i];
       }
     }
     return max; // No check for empty array
   }
 
   // Issue 19: Incorrect minimum finding
-  min(numbers) {
-    let min = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-      if (numbers[i] < min) {
-        min = numbers[i];
+  min(nums) {
+    let min = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] < min) {
+        min = nums[i];
       }
     }
     return min; // No check for empty array
   }
 
   // Issue 20: Incorrect sum calculation
-  sum(numbers) {
+  sum(nums) {
     let total = 0;
-    for (let num of numbers) {
+    for (const num of nums) {
       total += num; // No type checking for non-numbers
     }
     return total;
@@ -174,10 +175,7 @@ class BuggyCalculator {
 
   // Issue 23: Incorrect input validation
   validateInput(input) {
-    if (typeof input === "number") {
-      return true;
-    }
-    return false; // Should also check for NaN and Infinity
+    return typeof input === "number";
   }
 
   // Issue 24: Incorrect decimal precision
