@@ -174,10 +174,7 @@ class BuggyCalculator {
 
   // Issue 23: Incorrect input validation
   validateInput(input) {
-    if (typeof input === "number") {
-      return true;
-    }
-    return false; // Should also check for NaN and Infinity
+    return typeof input === "number";
   }
 
   // Issue 24: Incorrect decimal precision
@@ -225,7 +222,7 @@ try {
 
 // Issue 32: Incorrect input validation
 console.log("Valid input:", calculator.validateInput("5")); // Should be false for string
-console.log("Valid input:", calculator.validateInput(NaN)); // Should be false for NaN
+console.log("Valid input:", calculator.validateInput(Number.NaN)); // Should be false for NaN
 
 // Issue 33: Incorrect precision handling
 console.log("Precision:", calculator.setPrecision(3.14159, 2)); // Should be 3.14

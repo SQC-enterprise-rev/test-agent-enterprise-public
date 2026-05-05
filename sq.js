@@ -8,10 +8,6 @@ function add(a, b) {
     return a + b;
 }
 
-function add(a, b) { // Duplicate function: Code smell for duplicated blocks
-    return a + b;
-}
-
 let x; // Variables should be initialized: Code smell for uninitialized variables
 
 for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
