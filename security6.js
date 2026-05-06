@@ -21,7 +21,7 @@ window.open(url);
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const testResult = pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -38,17 +38,13 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+
 
 
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
+dynamicCode = "console.log('Hello from dynamic code!')";
 eval(dynamicCode);
 
 // Document DOM Modification
