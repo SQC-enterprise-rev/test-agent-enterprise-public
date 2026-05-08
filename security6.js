@@ -66,14 +66,14 @@ const url = "http://example.com";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
-const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const pattern2 = /(a+)+b/;
+const userInput2 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+const testResult = pattern2.test(userInput2);
 
 // Creating elements from strings
-const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
-const newElement = new DOMParser().parseFromString(userContent, "text/html");
-document.body.appendChild(newElement.body.firstChild);
+const userContent2 = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
+const newElement2 = new DOMParser().parseFromString(userContent2, "text/html");
+document.body.appendChild(newElement2.body.firstChild);
 
 // WebSQL Database
 // (NOTE: This is a hypothetical example since WebSQL might not be available in all browsers)
