@@ -1,0 +1,20 @@
+{
+  "name": "sonar-sca-test",
+  "version": "1.0.0",
+  "description": "Vulnerable JS dependencies for SonarQube SCA testing",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "axios": "0.18.0",
+    "express": "4.16.0",
+    "serialize-javascript": "1.9.1",
+    "handlebars": "4.0.11",
+    "node-fetch": "2.6.0",
+    "minimist": "1.2.0",
+    "path-to-regexp": "0.1.7",
+    "dot-prop": "4.2.0",
+    "marked": "0.6.1"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0"
+  }
+}
