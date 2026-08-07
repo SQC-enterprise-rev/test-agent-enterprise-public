@@ -25,7 +25,7 @@ pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
-const newElement = new DOMParser().parseFromString(userContent, "text/html");
+let newElement = new DOMParser().parseFromString(userContent, "text/html");
 document.body.appendChild(newElement.body.firstChild);
 
 // WebSQL Database
@@ -72,7 +72,7 @@ pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
-const newElement = new DOMParser().parseFromString(userContent, "text/html");
+newElement = new DOMParser().parseFromString(userContent, "text/html");
 document.body.appendChild(newElement.body.firstChild);
 
 // WebSQL Database
