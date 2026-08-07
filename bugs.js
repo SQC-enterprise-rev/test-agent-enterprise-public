@@ -106,11 +106,11 @@ class BuggyCalculator {
   }
 
   // Issue 18: Incorrect maximum finding
-  max(numbers) {
-    let max = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
-      if (numbers[i] > max) {
-        max = numbers[i];
+  max(nums) {
+    let max = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] > max) {
+        max = nums[i];
       }
     }
     return max; // No check for empty array
