@@ -128,9 +128,9 @@ class BuggyCalculator {
   }
 
   // Issue 20: Incorrect sum calculation
-  sum(numbers) {
+  sum(nums) {
     let total = 0;
-    for (let num of numbers) {
+    for (let num of nums) {
       total += num; // No type checking for non-numbers
     }
     return total;
