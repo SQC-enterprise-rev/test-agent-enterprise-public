@@ -33,8 +33,8 @@ document.body.appendChild(newElement.body.firstChild);
 // let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 // Dynamic imports
-const modulePath = '/module/path'; // Should not come from an untrusted source
-import(modulePath);
+const modulePath3 = '/module/path'; // Should not come from an untrusted source
+import(modulePath3);
 
 // Node.js child process
 // This needs to be in a Node.js environment
@@ -80,8 +80,8 @@ document.body.appendChild(newElement.body.firstChild);
 // let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 // Dynamic imports
-const modulePath = '/module/path'; // Should not come from an untrusted source
-import(modulePath);
+const modulePath3 = '/module/path'; // Should not come from an untrusted source
+import(modulePath3);
 
 // Node.js child process
 // This needs to be in a Node.js environment
