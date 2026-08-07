@@ -20,8 +20,8 @@ window.open(url);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const redosInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+pattern.test(redosInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -67,8 +67,8 @@ window.open(url);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const redosInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+pattern.test(redosInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
