@@ -12,6 +12,30 @@ function add(a, b) { // Duplicate function: Code smell for duplicated blocks
     return a + b;
 }
 
+ // Issue 23: Incorrect input validation
+  validateInput(input) {
+    if (typeof input === "number") {
+      return true;
+    }
+    return false; // Should also check for NaN and Infinity
+  }
+
+ // Issue 23: Incorrect input validation
+  validateInput(input) {
+    if (typeof input === "number") {
+      return true;
+    }
+    return false; // Should also check for NaN and Infinity
+  }
+
+ // Issue 23: Incorrect input validation
+  validateInput(input) {
+    if (typeof input === "number") {
+      return true;
+    }
+    return false; // Should also check for NaN and Infinity
+  }
+
 let x; // Variables should be initialized: Code smell for uninitialized variables
 
 for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
